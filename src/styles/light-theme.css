@@ -1,0 +1,39 @@
+:root {
+    --Toggle-light: hsl(230, 22%, 74%);
+    --White-BG: hsl(0, 0%, 100%);
+    --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+    --Light-Grayish-Blue-Card-BG-hover: hsl(227, 47%, 92%);
+    --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+    --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+.light-theme .top-bg {
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+}
+
+.light-theme .page-header__info {
+    border-bottom: solid 1px var(--Very-Dark-Blue-Text);
+}
+
+@media (min-width: 768px) {
+    .light-theme .page-header__info {
+        border-bottom: none;
+    }
+}
+
+.light-theme .page-header__info__title {
+    color: var(--Very-Dark-Blue-Text);
+}
+
+.light-theme .page-header__info__followers {
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.light-theme .toggle-container__label {
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.light-theme .overview-title {
+    color: var(--Dark-Grayish-Blue-Text);
+}

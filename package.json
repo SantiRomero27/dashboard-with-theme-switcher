@@ -1,0 +1,13 @@
+{
+    "name": "tip-calculator-app",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "dev": "parcel serve ./src/index.html",
+        "build": "parcel build ./src/index.html --dist-dir build"
+    },
+    "dependencies": {
+        "@types/node": "^18.11.7",
+        "parcel": "^2.7.0"
+    }
+}

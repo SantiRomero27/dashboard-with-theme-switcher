@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Theme Switcher</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./styles/light-theme.css" />
+        <link rel="stylesheet" href="./styles/dark-theme.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <!-- Script -->
+        <script type="module" src="./index.ts"></script>
+    </head>
+    <body class="light-theme">
+        <!-- Top BG container -->
+        <div class="top-bg"></div>
+
+        <!-- Main app -->
+        <main id="root">
+            <!-- Header -->
+            <header class="page-header">
+                <article class="page-header__info">
+                    <h1 class="page-header__info__title">
+                        Social Media Dashboard
+                    </h1>
+                    <span class="page-header__info__followers"></span>
+                </article>
+                <div class="toggle-container">
+                    <span class="toggle-container__label">Dark Mode</span>
+                    <custom-toggle></custom-toggle>
+                </div>
+            </header>
+
+            <!-- Stats section -->
+            <section class="stats-section">
+                <stats-card
+                    theme="light"
+                    username="santiromero27"
+                    social="facebook"
+                    people="10"
+                    update-num="12"
+                    update-status="negative"
+                ></stats-card>
+                <stats-card
+                    theme="light"
+                    username="santiromero27"
+                    social="twitter"
+                    people="23"
+                    update-num="54"
+                    update-status="negative"
+                ></stats-card>
+                <stats-card
+                    theme="light"
+                    username="santiromero27"
+                    social="instagram"
+                    people="202"
+                    update-num="3"
+                    update-status="positive"
+                ></stats-card>
+                <stats-card
+                    theme="light"
+                    username="santiromero27"
+                    social="youtube"
+                    people="13200"
+                    update-num="4561"
+                    update-status="positive"
+                ></stats-card>
+            </section>
+
+            <!-- Overview section -->
+            <section class="overview-section">
+                <h2 class="overview-title">Overview - Today</h2>
+                <div class="overview-section__cards">
+                    <overview-card
+                        theme="light"
+                        title="Page Views"
+                        amount="1230"
+                        social="facebook"
+                        update-num="1004"
+                        update-status="positive"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Likes"
+                        amount="52"
+                        social="facebook"
+                        update-num="2"
+                        update-status="negative"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Likes"
+                        amount="5462"
+                        social="instagram"
+                        update-num="2257"
+                        update-status="positive"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Profile Views"
+                        amount="52000"
+                        social="instagram"
+                        update-num="1375"
+                        update-status="positive"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Retweets"
+                        amount="117"
+                        social="twitter"
+                        update-num="303"
+                        update-status="positive"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Likes"
+                        amount="507"
+                        social="twitter"
+                        update-num="553"
+                        update-status="positive"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Likes"
+                        amount="107"
+                        social="youtube"
+                        update-num="19"
+                        update-status="negative"
+                    ></overview-card>
+                    <overview-card
+                        theme="light"
+                        title="Total Views"
+                        amount="1407"
+                        social="youtube"
+                        update-num="12"
+                        update-status="negative"
+                    ></overview-card>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

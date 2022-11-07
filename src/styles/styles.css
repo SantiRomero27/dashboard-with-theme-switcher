@@ -1,0 +1,181 @@
+:root {
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hwb(356 25% 14%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+}
+
+body,
+body * {
+    transition: all 0.3s ease;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.top-bg {
+    position: absolute;
+    z-index: 1;
+
+    height: 30vh;
+    width: 100%;
+
+    border-radius: 0 0 25px 25px;
+}
+
+@media (min-width: 768px) {
+    .top-bg {
+        height: 35vh;
+    }
+}
+
+/* App */
+#root {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    gap: 45px;
+
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    #root {
+        padding: 50px 0 75px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #root {
+        width: 87.5%;
+    }
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.page-header__info {
+    display: grid;
+    gap: 5px;
+
+    padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .page-header__info {
+        padding-bottom: 0;
+    }
+}
+
+.page-header__info__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.page-header__info__followers {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .toggle-container {
+        justify-content: unset;
+        padding-top: 0;
+    }
+}
+
+.toggle-container__label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .toggle-container__label {
+        margin-right: 10px;
+    }
+}
+
+/* Social media stats section */
+.stats-section {
+    display: grid;
+    gap: 35px;
+}
+
+@media (min-width: 768px) {
+    .stats-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .stats-section {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* Overview section */
+.overview-section {
+    display: grid;
+    gap: 25px;
+}
+
+.overview-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.overview-section__cards {
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .overview-section__cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .overview-section__cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
